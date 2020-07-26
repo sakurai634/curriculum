@@ -1,6 +1,8 @@
 public class Task1_4 {
     // 定数（条件）
     // ① 名前とパスワードの定数を定義してください。
+    private static final String CONST_ALICE = "alice";
+    private static final String CONST_PASS = "pass";
     // 補足:
     // 定数は②〜⑤で使い回すために定義しておきます。
     // final修飾子を付与すると、変数（動的に変わる値）ではなく、定数（変更不可な定まった値）となります。
