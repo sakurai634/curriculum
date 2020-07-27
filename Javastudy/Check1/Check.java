@@ -12,19 +12,18 @@ public class Check {
          * 問2 以下のfor文を完成させなさい
          */
         for (int i = 0; i < 5; i++) {
-        System.out.print(data[i] + " ");
+            System.out.print(data[i] + " ");
         }
         System.out.println();
         for (int i = 0; i < 4; i++) {
-            for (int j = 0; j > 4 - i; j++) {
+            for (int j = i + 1; j > i; j--) {
                 /*
                  * 問3 以下、配列の添字を入れてソートを完成させなさい
                  */
-
-                if (data[j] > data[j + 1]) {
-                    int box = data[j];
-                    data[j] = data[j + 1];
-                    data[j + 1] = box;
+                if (data[i] > data[j]) {
+                    int box = data[i];
+                    data[i] = data[j];
+                    data[j] = box;
                 }
             }
         }
